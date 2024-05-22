@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Artificial</title>
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc; 
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .title-container {
+            background-color: #ccc; 
+            padding: 10px;
+            border-radius: 10px; 
+            display: inline-block; 
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0; 
+        }
+        nav {
+            background-color: #d8ffd8; 
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #d8bfd8; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+       
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons img {
+            width: 30px; 
+            margin-left: 10px; 
+        }
+
+       
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .image-grid .card {
+            perspective: 1000px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+        }
+        .image-grid .card .inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .image-grid .card .front,
+        .image-grid .card .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .image-grid .card .front {
+            background-color: #fff;
+        }
+        .image-grid .card .back {
+            background-color: #f0f0f0;
+            transform: rotateY(180deg);
+            padding: 20px;
+        }
+        .image-grid .card.flip .inner {
+            transform: rotateY(180deg);
+        }
+        .image-grid .card.flip .back {
+            display: block;
+        }
+        .image-grid .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+        .image-grid .card h3 {
+            font-size: 1em; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="index.html" style="text-decoration: none; color: inherit;">Visión Artificial</a></h1>
+        <div class="title-container"></div>
+        <nav>
+            <ul>
+                <li><a href="Concepto Basico.html">Conceptos Básicos</a></li>
+                <li><a href="aplicacion.html">Aplicaciones</a></li>
+                <li><a href="desarrllo actual.html">Desarrollo Actual</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+    <div class="container">
+        <ul class="image-grid">
+            
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="sensor vision.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="back">
+                        <h3>Sensores de visión</h3>
+                        <p>Son los más básicos y muy fáciles de integrar en un sistema automatizado. Se emplean para detectar el paso de un elemento</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Cámaras inteligentes y sistemas de visión integrados..jpg" alt="Imagen 2">
+                    </div>
+                    <div class="back">
+                        <h3>Cámaras inteligentes y sistemas de visión integrados</h3>
+                        <p>Son cámaras que cuentan con sistemas de cálculo mucho más complejos. Su capacidad para procesar información y la posibilidad de trabajar en remoto las convierte en la solución presente en la mayor parte de la industria.</p>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Sistemas de visión avanzados.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="back">
+                        <h3>Sistemas de visión avanzados</h3>
+                        <p>Tanto su software como su hardware están en un nivel superior de desarrollo y eso influye positivamente en la cantidad de datos que pueden acumular y procesar.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Visión 1D.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="back">
+                        <h3>Visión 1D</h3>
+                        <p>Opera con una señal digital que estudia la imagen línea a línea y no en su totalidad. Se emplea para detectar defectos en materiales fabricados en un proceso de flujo continuo, donde los materiales están en constante movimiento y son sometidos a un tratamiento mecánico (metales, papel, tejidos, plásticos…).</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Visión 2D.png" alt="Imagen 5">
+                    </div>
+                    <div class="back">
+                        <h3>Visión 2D</h3>
+                        <p> Las cámaras 2D pueden captar imágenes en color o en escala de grises y las convierten en matrices divididas en píxeles, por eso se utilizan en el reconocimiento de caracteres como en la lectura de códigos o, incluso, en metrología.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Vision 3D.jpg" alt="Imagen 6">
+                    </div>
+                    <div class="back">
+                        <h3>Visión 3D</h3>
+                        <p> Estos sistemas recurren a varias cámaras colocadas en distintos lugares o sensores de láser por lo que reúnen información sobre la orientación del elemento. Suelen usarse en pick and place.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Termografía.jpg" alt="Imagen 7">
+                    </div>
+                    <div class="back">
+                        <h3>Termografía</h3>
+                        <p>A través de una serie de sensores capta información sobre la temperatura de las piezas y se representa en una escala de colores. Es la alternativa más recomendable a la hora de detectar fugas o desequilibrios.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="inner">
+                    <div class="front">
+                        <img src="Visión hiperespectral.png" alt="Imagen 8">
+                    </div>
+                    <div class="back">
+                        <h3>Visión hiperespectral.</h3>
+                        <p>Estas cámaras identifican la composición de cada elemento midiendo la longitud de onda. En alimentación se recurre a ellas para detectar intrusos como restos de tierra, plásticos…</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Vision Artificial. Todos los derechos reservados.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/VisionArticial" target="_blank">
+                <img src="facebook_logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/VisionArticial" target="_blank">
+                <img src="instagram_logo.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/VisionArticial" target="_blank">
+                <img src="twitter_logo.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('flip');
+            });
+        });
+    </script>
+</body>
+</html>

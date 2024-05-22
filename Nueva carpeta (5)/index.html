@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Artificial</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc; 
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .title-container {
+            background-color: #ccc; 
+            padding: 10px;
+            border-radius: 10px; 
+            display: inline-block; 
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0; 
+        }
+        nav {
+            background-color: #d8ffd8; 
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+        .info-table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+        .info-table th, .info-table td {
+            padding: 40px;
+            border: 10px solid #FFC0CB; 
+            text-align: left;
+            line-height: 1.5; 
+        }
+        
+        .info-table td {
+            white-space: pre-line; 
+        }
+        footer {
+            background-color: #d8bfd8; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+       
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons img {
+            width: 30px; 
+            margin-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Visión Artificial</h1>
+        <div class="title-container"></div>
+        <nav>
+            <ul>
+                <li><a href="Concepto Basico.html">Conceptos Básicos</a></li>
+                <li><a href="clasificacion.html">Clasificación</a></li>
+                <li><a href="aplicacion.html">Aplicaciones</a></li>
+                <li><a href="desarrllo actual.html">Desarrollo Actual</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="vision_artificial.jpg" alt="Primera imagen">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Vision_Artificial_746x419.jpg" alt="Segunda imagen">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="siete-aplicaciones-vision-artificial.jpg" alt="Tercera imagen">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <table class="info-table">
+            <tr>
+                <th>¿Qué es?</th>
+                <td>La visión artificial es un campo de la IA que permite que las computadoras y los sistemas obtengan información significativa de imágenes digitales, videos y otras entradas visuales, y tomen acciones o hagan recomendaciones basadas en esa información.
+Si la IA permite que las computadoras piensen, la visión artificial les permite ver, observar y comprender.
+La visión artificial funciona de manera muy similar a la visión humana, excepto que los humanos tienen una ventaja.
+La vista humana tiene la ventaja de las experiencias y los contextos aprendidos para diferenciar entre los objetos, qué tan lejos están, si se están moviendo o si hay algo mal en una imagen.
+La visión artificial entrena a las máquinas para realizar estas funciones, pero tiene que hacerlo en mucho menos tiempo con cámaras, datos y algoritmos en lugar de retinas, nervios ópticos y una corteza visual.
+Debido a que un sistema capacitado para inspeccionar productos o la manufactura de estos puede analizar miles de productos o procesos por minuto puede superar rápidamente las capacidades humanas, notando defectos o problemas imperceptibles.
+La visión artificial se utiliza en industrias que van desde la energía y los servicios públicos hasta la manufactura y la industria automotriz, y el mercado sigue creciendo.
+Se espera que alcance los USD 48.6 miles de millones en 2022.</td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Vision Artificial. Todos los derechos reservados.</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/VisionArticial" target="_blank">
+                <img src="facebook_logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/VisionArticial" target="_blank">
+                <img src="instagram_logo.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/VisionArticial" target="_blank">
+                <img src="twitter_logo.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                interval: 5000 // Cambia la imagen cada 5 segundos (5000 milisegundos)
+            });
+        });
+    </script>
+</body>
+</html>

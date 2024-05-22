@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Artificial</title>
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc; 
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+        }
+        .title-container {
+            background-color: #ccc; 
+            padding: 10px;
+            border-radius: 10px; 
+            display: inline-block; 
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: left center, right center;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0; 
+        }
+        nav {
+            background-color: #d8ffd8; 
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px; 
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: left center, right center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #d8bfd8; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+       
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons img {
+            width: 30px; 
+            margin-left: 10px; 
+        }
+
+        .info-table {
+            border: 2px solid #007bff;
+            border-collapse: collapse; 
+            width: 100%;
+            margin-top: 20px;
+        }
+        .info-table th {
+            background-color: #007bff; 
+            color: #000000; 
+            border: 2px solid #007bff; 
+            padding: 8px;
+        }
+        .info-table td {
+            background-color: #f8f8f8; 
+            border: 2px solid #007bff; 
+            padding: 8px;
+        }
+        .info-table td:nth-child(1) {
+            font-weight: bold; 
+        }
+
+        .info-table img {
+            max-width: 150px; 
+            max-height: 100px; 
+        }
+        
+        .left-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px; 
+            height: auto;
+            z-index: -1; 
+        }
+
+        .right-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px; 
+            height: auto;
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="aplicacion(1).jpg" alt="Left Image" class="left-image">
+        <h1><a href="index.html" style="text-decoration: none; color: inherit;">Visión Artificial</a></h1>
+        <div class="title-container"></div>
+        <nav>
+            <ul>
+                <li><a href="clasificacion.html">Clasificación</a></li>
+                <li><a href="Concepto Basico.html">Conceptos Básicos</a></li>
+                <li><a href="desarrllo actual.html">Desarrollo Actual</a></li>
+            </ul>
+        </nav>
+        <img src="aplicacion.jpg" alt="Right Image" class="right-image">
+    </div>
+
+    <!-- Tabla con información -->
+    <div class="container">
+        <table class="info-table">
+            <tr>
+                <th>Áreas de Aplicación</th>
+                <th>Descripción</th>
+                <th>Imágenes</th> 
+            </tr>
+            <tr>
+                <td><strong>Reconocimiento facial</strong></td>
+                <td>Utilizado en sistemas de seguridad, aplicaciones de identificación biométrica, control de accesos y autenticación de usuarios en dispositivos móviles.</td>
+                <td><img src="reconocimiento.jpg" alt="Reconocimiento Facial"></td> <!-- Imagen para Reconocimiento facial -->
+            </tr>
+            <tr>
+                <td><strong>Automatización industrial</strong></td>
+                <td>Empleo para inspección de calidad de productos, guiado de robots, control de procesos de fabricación y seguimiento de piezas en líneas de producción.</td>
+                <td><img src="automatizacion-industrial.jpg" alt="Automatización Industrial"></td> <!-- Imagen para Automatización industrial -->
+            </tr>
+            <tr>
+                <td><strong>Navegación autónoma</strong></td>
+                <td>En vehículos autónomos, drones y robots móviles para la detección y evitación de obstáculos, así como para la identificación de rutas seguras.</td>
+                <td><img src="Navegación autónoma.jpg" alt="Navegación Autónoma"></td> <!-- Imagen para Navegación autónoma -->
+            </tr>
+            <tr>
+                <td><strong>Medicina y salud</strong></td>
+                <td>Utilizado en el diagnóstico médico a través del análisis de imágenes médicas como radiografías, resonancias magnéticas y tomografías computarizadas, así como en la monitorización de pacientes y el seguimiento de movimientos oculares.</td>
+                <td><img src="medicina-salud-wallet-app-bieni-.jpg" alt="Medicina y Salud"></td> <!-- Imagen para Medicina y salud -->
+            </tr>
+            <tr>
+                <td><strong>Agricultura inteligente</strong></td>
+                <td>Empleo en el monitoreo de cultivos, detección de enfermedades en plantas, clasificación y selección de frutas y verduras, y gestión eficiente del riego y la fertilización.</td>
+                <td><img src="Agricultura-inteligente.jpg" alt="Agricultura Inteligente"></td> <!-- Imagen para Agricultura inteligente -->
+            </tr>
+            <tr>
+                <td><strong>Seguridad y vigilancia</strong></td>
+                <td>Utilizado para la detección de intrusos, análisis de comportamiento, reconocimiento de placas de matrícula y seguimiento de personas en espacios públicos.</td>
+                <td><img src="Seguridad y vigilancia.jpg" alt="Seguridad y Vigilancia"></td> <!-- Imagen para Seguridad y vigilancia -->
+            </tr>
+            <tr>
+                <td><strong>Realidad aumentada y virtual</strong></td>
+                <td>Empleo en aplicaciones de realidad aumentada y virtual para el seguimiento de marcadores, detección de superficies y objetos en el entorno del usuario, y superposición de contenido digital en el mundo real.</td>
+                <td><img src="Realidad aumentada y virtual.jpg" alt="Realidad Aumentada y Virtual"></td> <!-- Imagen para Realidad aumentada y virtual -->
+            </tr>
+            <tr>
+                <td><strong>Automatización de servicios</strong></td>
+                <td>Utilizado en la automatización de procesos en servicios como el reconocimiento y clasificación de documentos, identificación de objetos en entornos logísticos y detección de fraudes.</td>
+                <td><img src="Automatización de servicios.jpg" alt="Automatización de Servicios"></td> <!-- Imagen para Automatización de servicios -->
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Vision Artificial. Todos los derechos reservados.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/VisionArticial" target="_blank">
+                <img src="facebook_logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/VisionArticial" target="_blank">
+                <img src="instagram_logo.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/VisionArticial" target="_blank">
+                <img src="twitter_logo.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

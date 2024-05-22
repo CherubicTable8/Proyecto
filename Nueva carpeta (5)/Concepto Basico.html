@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Artificial</title>
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ccc; 
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            position: relative; 
+        }
+        .title-container, nav {
+            background-color: #d8ffd8; /* Cambiamos el fondo de ambos elementos */
+            padding: 10px;
+            border-radius: 10px; 
+            display: inline-block; 
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: left center, right center;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #d8bfd8; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+       
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons img {
+            width: 30px; 
+            margin-left: 10px; 
+        }
+
+        
+        .info-table {
+            border: 2px solid #ffb6c1; 
+            border-collapse: collapse; 
+            width: 100%;
+            margin-top: 20px;
+        }
+        .info-table th {
+            background-color: #ffb6c1; 
+            color: #000; 
+            border: 2px solid #ffb6c1; 
+            padding: 8px;
+        }
+        .info-table td {
+            background-color: #f8f8f8; 
+            border: 2px solid #ffb6c1; 
+            padding: 8px;
+        }
+        .info-table td:nth-child(1) {
+            font-weight: bold; 
+        }
+
+        
+        .left-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px; 
+            height: auto;
+            z-index: -1; 
+        }
+
+        .right-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px; 
+            height: auto;
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="que-es-la-vision-artificial.jpg" alt="Left Image" class="left-image">
+        <h1><a href="index.html" style="text-decoration: none; color: inherit;">Visión Artificial</a></h1>
+        <div class="title-container"></div>
+        <nav>
+            <ul>
+                <li><a href="clasificacion.html">Clasificación</a></li>
+                <li><a href="aplicacion.html">Aplicaciones</a></li>
+                <li><a href="desarrllo actual.html">Desarrollo Actual</a></li>
+            </ul>
+        </nav>
+        <img src="computer-vision-machine-learning-1024x630-1.jpg" alt="Right Image" class="right-image">
+    </div>
+
+    <div class="container">
+        <table class="info-table">
+            <tr>
+                <th>Concepto</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><strong>Imágenes y vídeos digitales</strong></td>
+                <td>La visión artificial trabaja con imágenes y vídeos digitales, que son representaciones numéricas de escenas visuales capturadas por dispositivos como cámaras o sensores. Estas imágenes consisten en matrices de píxeles, donde cada píxel tiene valores que representan el color o la intensidad de la luz en una posición específica.</td>
+            </tr>
+            <tr>
+                <td><strong>Preprocesamiento de imágenes</strong></td>
+                <td>Antes de aplicar algoritmos de visión artificial, a menudo es necesario realizar preprocesamiento en las imágenes para mejorar la calidad, reducir el ruido y resaltar características importantes. Esto puede incluir operaciones como filtrado, suavizado, corrección de iluminación y normalización.</td>
+            </tr>
+            <tr>
+                <td><strong>Extracción de características</strong></td>
+                <td>La extracción de características implica identificar y describir patrones importantes en una imagen que son relevantes para la tarea específica que se quiere realizar. Esto puede incluir características como bordes, esquinas, texturas, formas y colores, que se utilizan para detectar objetos, reconocer patrones o realizar otros tipos de análisis.</td>
+            </tr>
+            <tr>
+                <td><strong>Algoritmos de aprendizaje automático</strong></td>
+                <td>En muchos casos, la visión artificial utiliza algoritmos de aprendizaje automático para entrenar modelos que puedan reconocer patrones y tomar decisiones a partir de los datos visuales. Esto puede incluir técnicas como redes neuronales convolucionales (CNN), máquinas de vectores de soporte (SVM), árboles de decisión y clasificadores basados en características.</td>
+            </tr>
+            <tr>
+                <td><strong>Segmentación de imágenes</strong></td>
+                <td>La segmentación de imágenes consiste en dividir una imagen en regiones o segmentos significativos que comparten ciertas características visuales. Esto puede ser útil para separar objetos del fondo, identificar regiones de interés o delimitar áreas específicas para análisis posterior.</td>
+            </tr>
+            <tr>
+                <td><strong>Reconocimiento de objetos y patrones</strong></td>
+                <td>El reconocimiento de objetos y patrones es una tarea fundamental en visión artificial, que implica identificar y clasificar objetos en imágenes o vídeos. Esto puede incluir reconocimiento facial, detección de objetos, seguimiento de movimientos y clasificación de imágenes.</td>
+            </tr>
+            <tr>
+                <td><strong>Aplicaciones específicas</strong></td>
+                <td>La visión artificial se aplica en una amplia variedad de campos y aplicaciones, incluyendo la medicina, la agricultura, la robótica, la seguridad, el entretenimiento, la automatización industrial y muchas otras áreas donde el análisis de imágenes y vídeos puede proporcionar información útil y facilitar la toma de decisiones.</td>
+            </tr>
+        </table>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Vision Artificial. Todos los derechos reservados.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.facebook.com/VisionArticial" target="_blank">
+                <img src="facebook_logo.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/VisionArticial" target="_blank">
+                <img src="instagram_logo.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/VisionArticial" target="_blank">
+                <img src="twitter_logo.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
